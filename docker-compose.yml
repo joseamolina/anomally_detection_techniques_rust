@@ -1,0 +1,52 @@
+services:
+  redpanda:
+    image: redpandadata/redpanda:latest
+    container_name: redpanda
+    command:
+      - redpanda
+      - start
+      - --overprovisioned
+      - --smp
+      - "1"
+      - --memory
+      - 1G
+      - --reserve-memory
+      - 0M
+      - --node-id
+      - "0"
+      - --check=false
+      - --advertise-kafka-addr
+      - redpanda:9092
+    ports:
+      - "9092:9092"
+      - "9644:9644"
+
+  rustsf:
+    image: rustfs/rustfs:latest
+    container_name: rustsf
+    volumes:
+      - ~/data:/dat
+      - ~/logs:/logs
+    ports:
+      - "9000:9000"
+      - "9001:9001"
+    environment:
+      RUSTSF_LOG_LEVEL: info
+    networks:
+      - rustsf-net
+
+  kafka-producer:
+    build: ./producer
+    container_name: kafka-producer
+    depends_on:
+      - redpanda
+    environment:
+      KAFKA_BROKER: redpanda:9092
+      TOPIC: r023hf
+      MIN_VALUE: 10
+      MAX_VALUE: 50
+      EVENTS_PER_SEC: 2
+
+networks:
+  rustsf-net:
+    driver: bridge
