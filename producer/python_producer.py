@@ -26,5 +26,3 @@ def send_message(arguments):
 
 if __name__ == "__main__":
     send_message(sys.argv)
-
-# $TOPIC $KAFKA_BROKER $MIN_VALUE $MAX_VALUE $EVENTS_PER_SEC

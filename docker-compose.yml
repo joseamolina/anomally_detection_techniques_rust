@@ -22,6 +22,8 @@ services:
       - "9644:9644"
 
   rustsf:
+    security_opt:
+      - "no-new-privileges:true"
     image: rustfs/rustfs:latest
     container_name: rustsf
     volumes:
@@ -31,7 +33,8 @@ services:
       - "9000:9000"
       - "9001:9001"
     environment:
-      RUSTSF_LOG_LEVEL: info
+      - RUSTSF_LOG_LEVEL=info
+      - RUSTFS_OBS_ENDPOINT=http://otel-collector:4317
     networks:
       - rustsf-net
 
@@ -46,6 +49,21 @@ services:
       MIN_VALUE: 10
       MAX_VALUE: 50
       EVENTS_PER_SEC: 2
+
+  rust-consumer:
+    build:
+      context: ./rust-consumer
+      dockerfile: Dockerfile
+    container_name: rust-consumer
+    depends_on:
+      - rustsf
+    environment:
+      RUSTFS_PATH: /mnt/data
+      RUSTFS_API: http://rustsf:9000
+    volumes:
+      - ~/data:/mnt/data
+    networks:
+      - rustsf-net
 
 networks:
   rustsf-net:
