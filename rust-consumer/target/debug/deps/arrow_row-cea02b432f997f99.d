@@ -1,9 +1,0 @@
-/Users/josengelmolina/RustroverProjects/fraud_anomally_detection/rust-consumer/target/debug/deps/arrow_row-cea02b432f997f99.d: /Users/josengelmolina/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/arrow-row-57.2.0/src/lib.rs /Users/josengelmolina/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/arrow-row-57.2.0/src/fixed.rs /Users/josengelmolina/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/arrow-row-57.2.0/src/list.rs /Users/josengelmolina/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/arrow-row-57.2.0/src/run.rs /Users/josengelmolina/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/arrow-row-57.2.0/src/variable.rs
-
-/Users/josengelmolina/RustroverProjects/fraud_anomally_detection/rust-consumer/target/debug/deps/libarrow_row-cea02b432f997f99.rmeta: /Users/josengelmolina/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/arrow-row-57.2.0/src/lib.rs /Users/josengelmolina/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/arrow-row-57.2.0/src/fixed.rs /Users/josengelmolina/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/arrow-row-57.2.0/src/list.rs /Users/josengelmolina/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/arrow-row-57.2.0/src/run.rs /Users/josengelmolina/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/arrow-row-57.2.0/src/variable.rs
-
-/Users/josengelmolina/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/arrow-row-57.2.0/src/lib.rs:
-/Users/josengelmolina/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/arrow-row-57.2.0/src/fixed.rs:
-/Users/josengelmolina/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/arrow-row-57.2.0/src/list.rs:
-/Users/josengelmolina/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/arrow-row-57.2.0/src/run.rs:
-/Users/josengelmolina/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/arrow-row-57.2.0/src/variable.rs:

@@ -1,8 +1,0 @@
-/Users/josengelmolina/RustroverProjects/fraud_anomally_detection/rust-consumer/target/debug/deps/rdkafka_sys-3c284bbd57e73dc2.d: /Users/josengelmolina/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rdkafka-sys-4.9.0+2.10.0/src/lib.rs /Users/josengelmolina/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rdkafka-sys-4.9.0+2.10.0/src/bindings.rs /Users/josengelmolina/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rdkafka-sys-4.9.0+2.10.0/src/helpers.rs /Users/josengelmolina/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rdkafka-sys-4.9.0+2.10.0/src/types.rs
-
-/Users/josengelmolina/RustroverProjects/fraud_anomally_detection/rust-consumer/target/debug/deps/librdkafka_sys-3c284bbd57e73dc2.rmeta: /Users/josengelmolina/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rdkafka-sys-4.9.0+2.10.0/src/lib.rs /Users/josengelmolina/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rdkafka-sys-4.9.0+2.10.0/src/bindings.rs /Users/josengelmolina/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rdkafka-sys-4.9.0+2.10.0/src/helpers.rs /Users/josengelmolina/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rdkafka-sys-4.9.0+2.10.0/src/types.rs
-
-/Users/josengelmolina/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rdkafka-sys-4.9.0+2.10.0/src/lib.rs:
-/Users/josengelmolina/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rdkafka-sys-4.9.0+2.10.0/src/bindings.rs:
-/Users/josengelmolina/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rdkafka-sys-4.9.0+2.10.0/src/helpers.rs:
-/Users/josengelmolina/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rdkafka-sys-4.9.0+2.10.0/src/types.rs:
