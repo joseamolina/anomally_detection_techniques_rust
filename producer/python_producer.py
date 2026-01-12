@@ -9,7 +9,8 @@ def send_message(arguments):
     broker = arguments[2]
     topic = arguments[1]
     conf = {
-        'bootstrap.servers': broker
+        'bootstrap.servers': broker,
+        "client.id": "orders-producer"
     }
 
     producer = Producer(conf)
@@ -18,6 +19,7 @@ def send_message(arguments):
     while True:
         temp_val = str(random.randint(40, 80) if random.random() < prob else random.randint(0, 40))
         value = f"""{{"sensor": "0", "value": "{temp_val}"}}"""
+        print(value)
         producer.produce(topic, value=value)
         producer.flush()
 

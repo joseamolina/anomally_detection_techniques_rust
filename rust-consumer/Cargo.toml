@@ -1,9 +1,11 @@
 [package]
 name = "rust_consumer"
 version = "0.1.0"
-edition = "2024"
+edition = "2021"
 
 [dependencies]
 rdkafka = { version = "0.30", features = ["tokio"] }
 tokio = { version = "1.37", features = ["macros", "rt-multi-thread"] }
 anyhow = "1.0.100"
+deltalake = "0.30.1"
+arrow = "57.2.0"

@@ -1,7 +1,7 @@
 use rdkafka::config::ClientConfig;
 use rdkafka::consumer::{StreamConsumer, Consumer};
 use anyhow::Result;
-
+use rdkafka::TopicPartitionList;
 use crate::config::KafkaConfig;
 
 pub fn create_consumer(cfg: &KafkaConfig) -> Result<StreamConsumer> {
@@ -12,6 +12,10 @@ pub fn create_consumer(cfg: &KafkaConfig) -> Result<StreamConsumer> {
         .set("auto.offset.reset", "earliest")
         .create()?;
 
-    consumer.subscribe(&[&cfg.topic])?;
+    // Asignar partición manualmente (offset inicial 0)
+    let mut tpl = TopicPartitionList::new();
+    tpl.add_partition_offset(&cfg.topic, 0, rdkafka::Offset::Beginning)?;
+    consumer.assign(&tpl)?;
+
     Ok(consumer)
 }

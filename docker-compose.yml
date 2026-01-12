@@ -60,6 +60,10 @@ services:
     environment:
       RUSTFS_PATH: /mnt/data
       RUSTFS_API: http://rustsf:9000
+      KAFKA_BROKERS: redpanda:9092
+      KAFKA_TOPIC: r023hf
+      KAFKA_GROUP: orders-producer
+
     volumes:
       - ~/data:/mnt/data
     networks:
