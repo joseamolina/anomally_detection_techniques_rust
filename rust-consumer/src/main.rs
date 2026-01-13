@@ -1,9 +1,6 @@
-mod config;
-mod consumer;
-mod processor;
-
 use rdkafka::consumer::{Consumer, CommitMode};
 use anyhow::Result;
+use rust_consumer::session::{config, consumer, processor};
 
 #[tokio::main]
 async fn main() -> Result<()> {

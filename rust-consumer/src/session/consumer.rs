@@ -2,7 +2,7 @@ use rdkafka::config::ClientConfig;
 use rdkafka::consumer::{StreamConsumer, Consumer};
 use anyhow::Result;
 use rdkafka::TopicPartitionList;
-use crate::config::KafkaConfig;
+use crate::session::config::KafkaConfig;
 
 pub fn create_consumer(cfg: &KafkaConfig) -> Result<StreamConsumer> {
     let consumer: StreamConsumer = ClientConfig::new()
